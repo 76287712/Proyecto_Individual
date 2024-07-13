@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Calculo de sueldo</h1>
+    <form action="../php/ejercicio_4.php" method="post">
+        <div class="mb-3">
+          <label for="exampleInputtext1" class="form-label">Nombre del Empleado</label>
+          <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="textHelp" placeholder="Ingrese el nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Horas trabajadas</label>
+          <input type="number" name="horas"  class="form-control" id="horas" placeholder="Ingrese las horas" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Tarifa por hora</label>
+            <input type="number" name="tarifaHoras"  class="form-control" id="tarifaHoras" placeholder="Ingrese la tarifa por horas" required>
+          </div>
+
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" value="Calcular Sueldo">Submit</button>
+      </form>
+    </div>
+</body>
+</html>
